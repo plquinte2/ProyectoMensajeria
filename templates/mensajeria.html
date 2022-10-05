@@ -14,13 +14,13 @@
                     <div class="row">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Mensajeria Interna Mision TIC - Central MAIL</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Mensajeria Interna Mintic Grupo 13</h1>
                             </div>
                             <form class="user" action="/enviarmensaje" method="POST">
                                 <div class="form-group row">
                                     <div class="col-sm-12 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user mb-3" id="nombre1"
-                                            name="asunto" placeholder="Asunto">
+                                            name="asunto" placeholder="Ingrese el asunto del mensaje">
                                     </div>
                                     
                                 </div>
@@ -28,7 +28,7 @@
                                     
                                     <div class="col-sm-12 mb-6 mb-sm-0">
                                         <select class="form-select mb-3" aria-label="Default select example" id="destinatario" name="destinatario">
-                                            <option value="seleccione" selected>Seleccione</option>
+                                            <option value="seleccione" selected>Seleccione el usuario a quien va dirigido el mensaje</option>
                                          {% for user in datauser %}
                                             <option value="{{user['usuario']}}">{{ user['nombre'].upper() }} {{ user['apellido'].upper() }}</option>
                                          {% endfor %}
@@ -39,7 +39,7 @@
                                 <div class="form-group row">
                                     <div class="col-sm-12 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user mb-3" id="pass"
-                                            name="cuerpo" placeholder="Cuerpo del Mensaje">
+                                            name="cuerpo" placeholder="Ingrese el cuerpo del Mensaje">
                                     </div>
                                 </div>
 
